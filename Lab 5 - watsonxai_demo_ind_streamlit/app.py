@@ -6,16 +6,12 @@ from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames as GenP
 from langchain.llms.base import LLM
 # Import lang Chain Interface object
 from langChainInterface import LangChainInterface
-# Import langchain prompt templates
-from langchain.prompts import PromptTemplate
 # Import system libraries
 import os
 # Import streamlit for the UI 
 import streamlit as st
-from ibm_watson_machine_learning.foundation_models import Model as IBM_Mod
-# from genai.model import Model as GMod
 import re
-#translator
+# import qa-model
 from qa_model import *
 
 # Load environment vars
