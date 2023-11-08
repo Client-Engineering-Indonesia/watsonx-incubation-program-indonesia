@@ -1,0 +1,2 @@
+input: {nama} {nama_keluarga} berumur {umur} tahun dan tinggal di daerah {kota}, {provinsi}. Ia telah membeli {riwayat_transaksi}.
+output: Rekomendasi: Barang 1: {rekomendasi_1}, Barang 2: {rekomendasi_2}
