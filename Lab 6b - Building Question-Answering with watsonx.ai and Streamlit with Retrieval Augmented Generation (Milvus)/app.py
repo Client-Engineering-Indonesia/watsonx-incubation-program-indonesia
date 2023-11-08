@@ -87,10 +87,8 @@ if chain_option == "refine":
     chain_types = "refine"
 elif chain_option == "stuff":
     chain_types = "stuff"
-elif chain_option == "mapReduce":
-    chain_types = "map_reduce"
 else:
-    chain_types = "map_rerank"
+    chain_types = "map_reduce"
 
 if decoding == "greedy":
 
