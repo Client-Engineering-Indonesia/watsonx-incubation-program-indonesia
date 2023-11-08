@@ -353,11 +353,11 @@ if st.session_state.messages[-1]["role"] != "assistant":
                     chain = load_qa_chain(model_llm, chain_type=chain_types)
                     response = chain.run(input_documents=docs_search, question=translated_user_input)
 
-                response = translate_to_bahasa(response, True)
-                print(f"{response}\n")
-
                 if "<|endoftext|>" in response:
                     response = response.replace("<|endoftext|>", "")
+
+                response = translate_to_bahasa(response, True)
+                print(f"{response}\n")
 
             except NameError:
                 response = "Silahkan untuk unggah dokumen Anda terlebih dahulu."
