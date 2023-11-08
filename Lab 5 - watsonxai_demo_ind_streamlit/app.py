@@ -55,8 +55,6 @@ mt_zero = "bigscience/mt0-xxl-13b"
 
 llm = LangChainInterface(model=llama2, credentials=creds, params=params, project_id=project_id)
 
-import streamlit as st
-
 # Title for the app
 st.title('🤖 Model AI untuk Tanya Jawab')
 
