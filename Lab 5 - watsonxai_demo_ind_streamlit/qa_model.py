@@ -1,26 +1,4 @@
-
-#This is translation model from ID reference
-from ibm_watson_machine_learning.foundation_models import Model as IBM_Mod
-import re
-from dotenv import load_dotenv
-import os
-
-# Load environment vars
-load_dotenv()
-
-# Define credentials 
-api_key = os.getenv("API_KEY", None)
-ibm_cloud_url = os.getenv("IBM_CLOUD_URL", None)
-project_id = os.getenv("PROJECT_ID", None)
-
-if api_key is None or ibm_cloud_url is None or project_id is None:
-    print("Ensure you copied the .env file that you created earlier into the same directory as this notebook")
-else:
-    creds = {
-        "url": ibm_cloud_url,
-        "apikey": api_key 
-    }
-
+#Model Knowledge
 
 question_answer_id = """
 Pertanyaan: 
