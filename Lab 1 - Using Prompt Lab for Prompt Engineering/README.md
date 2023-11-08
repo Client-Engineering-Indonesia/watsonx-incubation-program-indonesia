@@ -14,5 +14,3 @@ Untuk memahami bagaimana menggunakan Prompt Lab, dan berlatih cara memberikan pr
 
 Jika anda membutuhkan referensi untuk jawaban diatas, anda bisa mengakses python notebook Lab 1 [disini]()
 
-Untuk perbandingan hasil OpenAI GPT-3.5 untuk usecases diatas dengan LLM model yang tersedia di watsonx.ai bisa dilihat [disini]()
-
