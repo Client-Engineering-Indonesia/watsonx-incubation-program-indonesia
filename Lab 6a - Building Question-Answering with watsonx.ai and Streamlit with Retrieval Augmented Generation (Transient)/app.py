@@ -109,7 +109,7 @@ if decoding == "greedy":
             GenParams.MAX_NEW_TOKENS: max_new_tokens,
             GenParams.TEMPERATURE: 1,
             GenParams.REPETITION_PENALTY: 1.2,
-            GenParams.STOP_SEQUENCES: [" # ", " ** " ," * ", "<|endoftext|>"],
+            GenParams.STOP_SEQUENCES: [" # ", " ** " ," * ", "<|endoftext|>", "--"],
         }
 else:
         params = {
@@ -120,7 +120,7 @@ else:
             GenParams.TOP_K: 100,
             GenParams.TOP_P: 1,
             GenParams.REPETITION_PENALTY: 1.2,
-            GenParams.STOP_SEQUENCES: [" # ", " ** " ," * ", "<|endoftext|>"],
+            GenParams.STOP_SEQUENCES: [" # ", " ** " ," * ", "<|endoftext|>", "--"],
         } 
 
 system_prompt = """
