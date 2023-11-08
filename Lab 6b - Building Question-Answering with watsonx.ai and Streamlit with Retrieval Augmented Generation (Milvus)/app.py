@@ -58,7 +58,7 @@ with st.sidebar:
     st.write("Configure model and parameters:")
 
     model_option = st.selectbox("Model Selected:", ["llama2-70b", "flan-ul2", "granite-13b"])
-    chain_option = st.selectbox("Chain Type:", ["stuff", "refine", "mapReduce", "mapRerank"])
+    chain_option = st.selectbox("Chain Type:", ["stuff", "refine", "mapReduce"])
     decoding_option = st.selectbox("Decoding Parameter:", ["greedy", "sample"])
     max_new_tokens = st.number_input("Max Tokens:", 1, 1024, value=256)
     min_new_tokens = st.number_input("Min Tokens:", 0, value=8)
@@ -93,18 +93,18 @@ else:
 if decoding == "greedy":
 
     params = {
-            GenParams.DECODING_METHOD: "greedy",
-            GenParams.MIN_NEW_TOKENS: 8,
-            GenParams.MAX_NEW_TOKENS: 256,
+            GenParams.DECODING_METHOD: decoding_option,
+            GenParams.MIN_NEW_TOKENS: min_new_tokens,
+            GenParams.MAX_NEW_TOKENS: max_new_tokens,
             GenParams.TEMPERATURE: 1,
             GenParams.REPETITION_PENALTY: 1.2,
             GenParams.STOP_SEQUENCES: [" # ", " ** " ," * ", "<|endoftext|>"],
         }
 else:
         params = {
-            GenParams.DECODING_METHOD: "greedy",
-            GenParams.MIN_NEW_TOKENS: 8,
-            GenParams.MAX_NEW_TOKENS: 256,
+            GenParams.DECODING_METHOD: decoding_option,
+            GenParams.MIN_NEW_TOKENS: min_new_tokens,
+            GenParams.MAX_NEW_TOKENS: max_new_tokens,
             GenParams.TEMPERATURE: 1,
             GenParams.TOP_K: 100,
             GenParams.TOP_P: 1,
