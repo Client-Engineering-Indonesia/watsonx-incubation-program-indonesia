@@ -104,24 +104,24 @@ else:
 if decoding == "greedy":
 
     params = {
-            GenParams.DECODING_METHOD: "greedy",
-            GenParams.MIN_NEW_TOKENS: 8,
-            GenParams.MAX_NEW_TOKENS: 256,
+            GenParams.DECODING_METHOD: decoding_option,
+            GenParams.MIN_NEW_TOKENS: min_new_tokens,
+            GenParams.MAX_NEW_TOKENS: max_new_tokens,
             GenParams.TEMPERATURE: 1,
             GenParams.REPETITION_PENALTY: 1.2,
             GenParams.STOP_SEQUENCES: [" # ", " ** " ," * ", "<|endoftext|>"],
         }
 else:
         params = {
-            GenParams.DECODING_METHOD: "greedy",
-            GenParams.MIN_NEW_TOKENS: 8,
-            GenParams.MAX_NEW_TOKENS: 256,
+            GenParams.DECODING_METHOD: decoding_option,
+            GenParams.MIN_NEW_TOKENS: min_new_tokens,
+            GenParams.MAX_NEW_TOKENS: max_new_tokens,
             GenParams.TEMPERATURE: 1,
             GenParams.TOP_K: 100,
             GenParams.TOP_P: 1,
             GenParams.REPETITION_PENALTY: 1.2,
             GenParams.STOP_SEQUENCES: [" # ", " ** " ," * ", "<|endoftext|>"],
-        }  
+        } 
 
 system_prompt = """
     You are communicating with Vella, a knowledgeable, respectful, and precise assistant. My purpose is to provide accurate answers based on the information found in the document you provided.
