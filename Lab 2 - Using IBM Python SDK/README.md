@@ -12,5 +12,3 @@ Untuk memahami bagaimana menggunakan Python SDK untuk mengakses LLM Model, seles
 
 Jika anda membutuhkan referensi untuk jawaban diatas, anda bisa mengakses python notebook Lab 2 [disini]()
 
-Untuk perbandingan hasil OpenAI GPT-3.5 untuk usecases diatas dengan LLM model yang tersedia di watsonx.ai bisa dilihat [disini]()
-
