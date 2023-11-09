@@ -10,5 +10,5 @@ Untuk memahami bagaimana menggunakan Python SDK untuk mengakses LLM Model, seles
 1. [Lab 2 - Prompt lab challenges](https://github.com/Client-Engineering-Indonesia/watsonx-incubation-program-indonesia/blob/main/Lab%202%20-%20Using%20IBM%20Python%20SDK/Lab%202%20-%20Prompt%20lab%20challenges.ipynb)
 
 
-Jika anda membutuhkan referensi untuk jawaban diatas, anda bisa mengakses python notebook Lab 2 [disini]()
+Jika anda membutuhkan referensi untuk jawaban diatas, anda bisa mengakses python notebook Lab 2 [disini](https://github.com/Client-Engineering-Indonesia/watsonx-incubation-program-indonesia/blob/main/Lab%202%20-%20Using%20IBM%20Python%20SDK/answer/Lab%202%20-%20Prompt%20lab%20challenges%20-%20Answer.ipynb)
 
